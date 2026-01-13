@@ -4,9 +4,9 @@ if(!isset($_SESSION['admin_id'])){
     header("Location: login.php");
     exit;
 }
-include 'db.php'; // connects to database
+include 'db.php'; 
 
-// Fetch canteens from database to populate dropdown
+
 $canteens = $conn->query("SELECT canteen_id, name FROM Canteen ORDER BY name");
 ?>
 <!DOCTYPE html>
